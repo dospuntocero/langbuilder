@@ -140,7 +140,7 @@ foreach($entries as $key => $arr){
 	$output .= '  '.NEWLINE . '# Output for class or file: '. $key . NEWLINE;
 	$output .= '  '.$key.':'.NEWLINE;
 	foreach($arr as $entry => $trnl){
-		$output .= '    '.$entry.':"'.str_replace("'", "\'", $trnl).'"'.NEWLINE;
+		$output .= '    '.$entry.': \''.str_replace("'", "\'", $trnl).'\''.NEWLINE;
 	}
 }
 
